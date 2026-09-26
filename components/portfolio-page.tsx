@@ -150,6 +150,7 @@ export function PortfolioPage() {
         <div className="hero-copy">
           <div className="hero-kicker"><span className="kicker-line" /> BUSINESS ANALYST · DATA PROFESSIONAL</div>
           <h1>Turning complex data into <span>clearer decisions.</span></h1>
+          <p className="hero-tagline">Business analysis · Data storytelling · Practical insight</p>
           <p className="hero-description">
             I connect business needs with meaningful analysis—helping teams understand performance,
             improve reporting, and find practical ways forward.
