@@ -3,9 +3,16 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
+  title: 'Dickson Samuel Akinnawo | Business Analyst & Data Professional',
+  description:
+    'Meet Dickson Samuel Akinnawo, a business analyst and data professional experienced in data analysis, Power BI reporting, KPI monitoring, and business process improvement.',
   generator: 'v0.app',
+  openGraph: {
+    title: 'Dickson Samuel Akinnawo | Business Analyst & Data Professional',
+    description:
+      'Turning complex data into clearer decisions through thoughtful analysis, reporting, and collaboration.',
+    type: 'profile',
+  },
   icons: {
     icon: [
       {
@@ -26,11 +33,8 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  colorScheme: 'light dark',
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: 'white' },
-    { media: '(prefers-color-scheme: dark)', color: 'black' },
-  ],
+  colorScheme: 'light',
+  themeColor: '#f8f8f4',
 }
 
 export default function RootLayout({
@@ -39,7 +43,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="light">
       <body className="antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
