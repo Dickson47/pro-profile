@@ -6,20 +6,20 @@
 
 :root {
   color-scheme: light;
-  --ink: #202d29;
-  --muted: #67736d;
-  --paper: #f8f8f4;
+  --ink: #e8efe9;
+  --muted: #a4b1a7;
+  --paper: #070a08;
   --white: #fff;
-  --line: #e4e8e1;
-  --green: #2e5948;
-  --green-dark: #183c30;
-  --mint: #e8eee7;
-  --orange: #d88b63;
+  --line: #202b23;
+  --green: #70d789;
+  --green-dark: #112b19;
+  --mint: #112017;
+  --orange: #8bd99b;
   --background: var(--paper);
   --foreground: var(--ink);
-  --card: var(--white);
+  --card: #101711;
   --card-foreground: var(--ink);
-  --popover: var(--white);
+  --popover: #101711;
   --popover-foreground: var(--ink);
   --primary: var(--green);
   --primary-foreground: #fff;
@@ -296,6 +296,34 @@ h1, h2, h3, p { margin-top: 0; }
   .site-footer { min-height: 78px; flex-wrap: wrap; justify-content: space-between; gap: 9px 14px; padding: 14px 20px; }
   .site-footer > span { order: 3; width: 100%; }
 }
+.site-header { border-bottom-color: var(--line); }
+.wordmark-mark { border-color: #36523b; }
+.desktop-nav a, .nav-cta, .button-text, .about-copy > p:not(.section-description), .approach-row p,
+.experience-detail li, .education-item h3, .education-item p, .training-item, .back-to-top { color: #b8c5bb; }
+.hero-art-wrap::before { border-color: #1b2b20; }
+.hero-art-wrap::after { border-color: #24362a; }
+.insight-card, .capabilities-note { border-color: #243228; background: #101711; }
+.floating-chip { border-color: #27352b; background: #101711; color: #c2cec4; }
+.insight-mark, .footer-icon, .training-check { background: #19271c; }
+.insight-title, .experience-detail h3, .capabilities-note h3 { color: var(--ink); }
+.hero-art-wrap .insight-label, .insight-footer, .insight-subtitle, .insight-dots,
+.chart-y-labels, .chart-x-labels, .hero-art-ornament, .scroll-cue, .hero-note,
+.experience-date, .education-item div > span, .training-year, .site-footer { color: #91a197; }
+.insight-footer, .approach-row, .experience-list, .experience-item, .training-list, .training-item { border-color: var(--line); }
+.chart-lines i { border-color: #253129; }
+.insight-card svg circle { fill: #101711; }
+.capabilities-section { background: #0b100c; }
+.skill-pill { border-color: #27362a; background: #111a13; color: #c0cdc2; }
+.skill-pill span, .footer-dot { background: var(--green); }
+.note-icon { background: #1b2b1e; }
+.capabilities-note > p:not(.eyebrow) { color: #a7b4a9; }
+.note-rule { background: var(--line); }
+.education-item:not(:last-child)::before { background: #26352a; }
+.education-dot { border-color: var(--green); }
+.button-light { background: var(--green); color: #071109; }
+.button-light:hover { background: #8de6a1; }
+.closing-section { background: #0c1b10; }
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
 }
