@@ -133,7 +133,7 @@ export function PortfolioPage() {
       <header className="site-header">
         <a className="wordmark" href="#home" aria-label="Dickson Akinnawo, home">
           <span className="wordmark-mark">DA</span>
-          <span>DICKSON AKINNAWO</span>
+          <span className="wordmark-name">DICKSON AKINNAWO</span>
         </a>
         <nav className="desktop-nav" aria-label="Main navigation">
           <a href="#about">About</a>
